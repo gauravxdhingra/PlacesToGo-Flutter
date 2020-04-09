@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:placestogooo/widgets/image_input.dart';
+import 'package:placestogooo/widgets/location_input.dart';
 import 'package:provider/provider.dart';
 import '../providers/great_places.dart';
 
@@ -56,6 +57,10 @@ class _AddPlacesScreenState extends State<AddPlacesScreen> {
                     height: 10,
                   ),
                   ImageInput(onSelectImage: _selectImage),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  LocationInput(),
                 ],
               ),
             ),
@@ -67,7 +72,7 @@ class _AddPlacesScreenState extends State<AddPlacesScreen> {
             elevation: 0,
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
             color: Theme.of(context).accentColor,
-          )
+          ),
         ],
       ),
     );
