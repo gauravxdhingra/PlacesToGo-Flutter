@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:placestogooo/widgets/image_input.dart';
 
 class AddPlacesScreen extends StatefulWidget {
   static const routeName = '/add-place';
@@ -33,11 +34,7 @@ class _AddPlacesScreenState extends State<AddPlacesScreen> {
                   SizedBox(
                     height: 10,
                   ),
-                  Container(),
-                  FlatButton(
-                    onPressed: () {},
-                    child: null,
-                  ),
+                  ImageInput(),
                 ],
               ),
             ),
