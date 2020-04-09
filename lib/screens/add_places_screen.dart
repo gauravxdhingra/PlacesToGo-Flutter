@@ -29,7 +29,15 @@ class _AddPlacesScreenState extends State<AddPlacesScreen> {
                   TextField(
                     controller: titleController,
                     decoration: InputDecoration(labelText: 'Title'),
-                  )
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(),
+                  FlatButton(
+                    onPressed: () {},
+                    child: null,
+                  ),
                 ],
               ),
             ),
