@@ -10,10 +10,10 @@ class GreatPlaces with ChangeNotifier {
     return [..._items];
   }
 
-  void appPlace(String pickedTitle, File PickedImage) {
+  void addPlace(String pickedTitle, File pickedImage) {
     final newPlace = Place(
       id: DateTime.now().toString(),
-      image: PickedImage,
+      image: pickedImage,
       location: null,
       title: pickedTitle,
     );
